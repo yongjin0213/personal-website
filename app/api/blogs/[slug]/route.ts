@@ -33,8 +33,3 @@ export async function GET(request: NextRequest, context: {params: Promise<{slug:
         status: 200
     })
 }
-
-export async function PUT(request: NextRequest, context: {params: {slug:string}}) {
-    const body = await request.json()
-    
-}
