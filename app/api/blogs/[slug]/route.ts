@@ -7,7 +7,7 @@ import {
     prisma
 } from '@/lib/prisma';
 
-export async function GET(request: NextRequest, context: {params: {slug:string}}) {
+export async function GET(request: NextRequest, context: {params: Promise<{slug:string}>}) {
     const { slug } = await context.params;
     const post = await prisma.post.findUnique({
         where: {
