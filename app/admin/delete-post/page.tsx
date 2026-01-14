@@ -1,8 +1,8 @@
 import BlogPostManage from "@/app/admin/components/BlogPostManage";
-import { getAllPosts } from "@/lib/api";
+import { getAllPostsDirect } from "@/lib/api";
 
 export default async function DeletePost() {
-  const posts: {id: number, created: Date, title: string, slug: string}[] = await getAllPosts();
+  const posts: {id: number, created: Date, title: string, slug: string}[] = await getAllPostsDirect();
   return (
     <div className="flex flex-col gap-4">
       <BlogPostManage initialPosts={posts}/>

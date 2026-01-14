@@ -1,9 +1,9 @@
 import Link from "next/link";
 import EditableText from "../components/cms/EditableText";
-import { getAllPosts } from "@/lib/api";
+import { getAllPostsDirect } from "@/lib/api";
 
 export default async function BlogsPage() {
-  const posts: {id: number, created: Date, title: string, slug: string}[] = await getAllPosts();
+  const posts: {id: number, created: Date, title: string, slug: string}[] = await getAllPostsDirect();
 
   return (
     <div className="flex flex-col gap-10">

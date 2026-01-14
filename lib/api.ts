@@ -9,3 +9,19 @@ export async function getAllPosts() {
     const posts = await response.json()
     return posts
 }
+
+import { prisma } from './prisma';
+
+export async function getAllPostsDirect() {
+    return await prisma.post.findMany({
+        select: {
+            id: true,
+            created: true,
+            title: true,
+            slug: true
+        },
+        orderBy: {
+            created: 'desc'
+        }
+    })
+}
