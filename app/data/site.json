@@ -1,0 +1,121 @@
+{
+  "site": {
+    "name": "Yongjin Lee",
+    "tagline": "Computer Science student @ Cornell",
+    "focus": "Interested in integrating ML infra into fullstack",
+    "theme": {
+      "scheme": "light-green",
+      "primary": "#7BC96F",
+      "secondary": "#CFECC7",
+      "accent": "#2F6F3E",
+      "background": "#F5FBF2",
+      "text": "#1F2D1F"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "headline": "Hi, I'm Yongjin Lee",
+        "subheadline": "Sophomore at Cornell interested in full-stack development and pipelining data for innovative solutions",
+        "cta": {
+          "label": "See my work",
+          "href": "/experiences"
+        }
+      },
+      "highlights": [
+        {
+          "title": "Fullstack + ML Infra",
+          "description": "Bridging data pipelines with product-facing apps."
+        },
+        {
+          "title": "Cornell CS",
+          "description": "Coursework in systems, ML, and software engineering."
+        },
+        {
+          "title": "Open to collaboration",
+          "description": "Research, internships, and side projects."
+        }
+      ]
+    },
+    "about": {
+      "summary": "I am a computer science student who enjoys scaling ML systems from notebooks to production.",
+      "values": [
+        "Practical ML tooling",
+        "Simple, reliable interfaces",
+        "Fast iteration and clear documentation"
+      ],
+      "interests": [
+        "Model serving",
+        "Feature stores",
+        "Observability",
+        "Product engineering"
+      ]
+    },
+    "experiences": {
+      "work": [
+        {
+          "name": "Cornell Engineers Without Borders",
+          "role": "Software Engineer - Digital Agriculture Subteam",
+          "period": "Aug 2025 ~ Present",
+          "summary": "Developing machine learning-powered solutions in the agriculture space",
+          "details": "",
+          "tech": ["FastAPI", "PyTorch", "AWS Lambda", "Flutter", "Agile Development"]
+        },
+        {
+          "name": "@tedszaza",
+          "role": "Web Development Intern",
+          "period": "Oct 2025 ~ Present",
+          "summary": "Built a website for famous TikTok creator, @tedszaza, for uploading recipes and gaining community engagement",
+          "details": "Created a reviewer workflow with automated sampling, audit trails, and metrics dashboards to keep dataset quality consistent across teams.",
+          "tech": ["Next.js", "PostgreSQL", "AWS S3", "RESTful API", "OAuth"]
+        },
+        {
+          "name": "Yonsei University Wireless Networking Lab",
+          "role": "Web Development Intern",
+          "period": "Feb 2025 ~ August 2025",
+          "summary": "Built internal tooling for data annotation and quality review.",
+          "details": "Created a reviewer workflow with automated sampling, audit trails, and metrics dashboards to keep dataset quality consistent across teams.",
+          "tech": ["PyTorch", "LaTex", "Research"]
+        },
+        {
+          "name": "United Nations Command - Joint Security Area",
+          "role": "Data Analyst/Interpreter",
+          "period": "Aug 2023 ~ Feb 2025",
+          "summary": "Built internal tooling for data annotation and quality review.",
+          "details": "Managed ",
+          "tech": ["Excel", "Word", "Foreign Languages", "Translation"]
+        }
+      ],
+      "projects": [
+        {
+          "name": "Research Paper Writing Assistant",
+          "role": "AI Engineer",
+          "summary": "Built a carbon tracking dashboard with automated data ingestion.",
+          "details": "Implemented ingestion jobs, lifecycle alerts, and a multi-tenant UI for sustainability teams to monitor targets in real time.",
+          "tech": ["LangChain", "Python", "Chroma DB", "Vercel"]
+        },
+        {
+          "name": "Cornell AppDev Hack Challenge: Course.ly",
+          "role": "Backend Engineer",
+          "summary": "Implemented a scheduling API and caching layer for student tools.",
+          "details": "Optimized schedule queries with caching and batching, reducing response times and enabling real-time availability updates.",
+          "tech": ["Flask", "DockerHub", "Google Cloud Platform"]
+        },
+        {
+          "name": "McDiver: Digging for Gold",
+          "role": "Backend Engineer",
+          "summary": "Implemented a scheduling API and caching layer for student tools.",
+          "details": "Optimized schedule queries with caching and batching, reducing response times and enabling real-time availability updates.",
+          "tech": ["Java", "JUnit", "Data Structures & Algorithms"]
+        },
+        {
+          "name": "Planetoids",
+          "role": "Fullstack Engineer",
+          "summary": "Implemented a scheduling API and caching layer for student tools.",
+          "details": "Optimized schedule queries with caching and batching, reducing response times and enabling real-time availability updates.",
+          "tech": ["Python", "Computational Physics", "GUI"]
+        }
+      ]
+    }
+  }
+}
