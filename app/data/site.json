@@ -1,8 +1,8 @@
 {
   "site": {
     "name": "Yongjin Lee",
-    "tagline": "Computer Science student @ Cornell",
-    "focus": "Interested in integrating ML infra into fullstack",
+    "tagline": "Yongjin Lee",
+    "focus": "",
     "theme": {
       "scheme": "light-green",
       "primary": "#7BC96F",
@@ -16,29 +16,15 @@
     "home": {
       "hero": {
         "headline": "Hi, I'm Yongjin Lee",
-        "subheadline": "Sophomore at Cornell interested in full-stack development and pipelining data for innovative solutions",
+        "subheadline": "I'm a Computer Science student at Cornell interested in full-stack and backend development. I have experience in fullstack web development, backend development, and computer networking research.",
         "cta": {
           "label": "See my work",
           "href": "/experiences"
         }
-      },
-      "highlights": [
-        {
-          "title": "Fullstack + ML Infra",
-          "description": "Bridging data pipelines with product-facing apps."
-        },
-        {
-          "title": "Cornell CS",
-          "description": "Coursework in systems, ML, and software engineering."
-        },
-        {
-          "title": "Open to collaboration",
-          "description": "Research, internships, and side projects."
-        }
-      ]
+      }
     },
     "about": {
-      "summary": "I am a computer science student who enjoys scaling ML systems from notebooks to production.",
+      "summary": "Languages",
       "values": [
         "Practical ML tooling",
         "Simple, reliable interfaces",

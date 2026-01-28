@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="animate-slide-in animate-delay-1 grid gap-6 md:grid-cols-3">
+      {/* <section className="animate-slide-in animate-delay-1 grid gap-6 md:grid-cols-3">
         {pages.home.highlights.map((highlight, index) => (
           <div
             key={highlight.title}
@@ -76,34 +76,59 @@ export default function Home() {
             />
           </div>
         ))}
-      </section>
+      </section> */}
 
-      <section className="animate-slide-in animate-delay-2 rounded-3xl border border-[var(--green-muted)] bg-[var(--green-surface)] px-8 py-10">
-        <EditableText
-          path="pages.home.sectionTitle"
-          defaultValue="Building at the intersection of ML and product"
-          as="h2"
-          className="font-display text-2xl font-semibold"
-          singleLine
-        />
-        <EditableText
-          path="site.focus"
-          defaultValue={site.focus}
-          as="p"
-          className="mt-3 max-w-3xl text-sm text-[color:rgba(31,45,31,0.75)]"
-        />
-        <div className="mt-6 flex flex-wrap gap-3">
-          <span className="rounded-full bg-[var(--green-muted)] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[var(--green-accent)]">
-            ML Infra
-          </span>
-          <span className="rounded-full bg-[var(--green-muted)] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[var(--green-accent)]">
-            Fullstack
-          </span>
-          <span className="rounded-full bg-[var(--green-muted)] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[var(--green-accent)]">
-            Cornell
-          </span>
-        </div>
-      </section>
+<section className="animate-slide-in animate-delay-2 rounded-3xl border border-[var(--green-muted)] bg-[var(--green-surface)] px-8 py-10">
+  <EditableText
+    path="pages.home.sectionTitle"
+    defaultValue="Technologies that I've worked with"
+    as="h2"
+    className="font-display text-2xl font-semibold"
+    singleLine
+  />
+  <EditableText
+    path="site.focus"
+    defaultValue={site.focus}
+    as="p"
+    className="mt-3 max-w-3xl text-sm text-[color:rgba(31,45,31,0.75)]"
+  />
+  
+  {/* Languages */}
+  <div className="mt-8">
+    <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-[color:rgba(31,45,31,0.6)]">
+      Languages
+    </h3>
+    <div className="flex flex-wrap gap-2.5">
+      {['Java', 'Python', 'JavaScript', 'HTML/CSS', 'C', 'SQL'].map((lang) => (
+        <span
+          key={lang}
+          className="group relative rounded-full bg-[var(--green-muted)] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[var(--green-accent)] transition-all duration-200 hover:scale-105 hover:shadow-md hover:shadow-[var(--green-accent)]/20"
+        >
+          {lang}
+        </span>
+      ))}
     </div>
+  </div>
+
+  {/* Divider */}
+  <div className="my-8 h-px bg-gradient-to-r from-transparent via-[var(--green-muted)] to-transparent" />
+
+  {/* Frameworks/Libraries */}
+  <div>
+    <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-[color:rgba(31,45,31,0.6)]">
+      Frameworks & Libraries
+    </h3>
+    <div className="flex flex-wrap gap-2.5">
+      {['Flask', 'FastAPI', 'PyTorch', 'Next.js', 'React.js', 'Express.js', 'Tailwind', 'PostgreSQL', 'SQLite3'].map((tech) => (
+        <span
+          key={tech}
+          className="group relative rounded-full bg-[var(--green-muted)] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[var(--green-accent)] transition-all duration-200 hover:scale-105 hover:shadow-md hover:shadow-[var(--green-accent)]/20"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>    </div>
   );
 }

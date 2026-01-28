@@ -11,7 +11,6 @@ const fetchPost = async (slug: string) => {
     const response = await fetch(`${process.env.DEV_URL}/api/blogs/${slug}`);
     
     if (!response.ok) {
-      console.log("This blog does not exist")
       return null
     }
     

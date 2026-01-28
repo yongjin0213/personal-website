@@ -7,7 +7,7 @@ import {
     prisma
 } from '@/lib/prisma';
 
-export async function GET(request: NextRequest, context: {params: Promise<{slug:string}>}) {
+export async function GET(context: {params: Promise<{slug:string}>}) {
     const { slug } = await context.params;
     const post = await prisma.post.findUnique({
         where: {
@@ -23,7 +23,6 @@ export async function GET(request: NextRequest, context: {params: Promise<{slug:
     })
 
     if (!post) {
-        console.log("Returning a 404 error")
         return NextResponse.json(
             { error: 'Post not found' },
             { status: 404 }
